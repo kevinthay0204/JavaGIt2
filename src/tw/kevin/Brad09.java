@@ -2,7 +2,7 @@ package tw.kevin;
 
 import java.util.Scanner;
 
-import com.sun.tools.classfile.DefaultAttribute;
+
 
 public class Brad09 {
 

@@ -9,7 +9,7 @@ public class Brad10 {
 	System.out.println("Month =");
 	int month = scanner.nextInt();
 	int days = 0;
-	int year;
+	
 	
 	switch (month) {
 	  case 1:case 3:case 5:case 7:case 8:case 10:case 12:
@@ -24,7 +24,7 @@ public class Brad10 {
 	
 	}
 	
-	System.out.println(String.format("%d月有%d天 " ,month<=12, days));
+	System.out.println(String.format("%d月有%d天 " ,month, days));
 	}
 
 }

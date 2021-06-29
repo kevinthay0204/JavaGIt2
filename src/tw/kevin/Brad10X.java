@@ -3,7 +3,7 @@ package tw.kevin;
 import java.util.Scanner;
 
 public class Brad10X {
-
+//https://zh.wikipedia.org/zh-tw/%E9%97%B0%E5%B9%B4
 	public static void main(String[] args) {
 	Scanner scanner = new Scanner(System.in);
 	System.out.println("Month =");

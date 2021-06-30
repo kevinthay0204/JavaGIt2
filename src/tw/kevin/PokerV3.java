@@ -21,6 +21,24 @@ public class PokerV3 {
 			}
 			System.out.println("System.currentTimeMillis()");
 		System.out.println(System.currentTimeMillis()-start);
+		
+		//------------------------------ 發排到四堆
+		int[][] players = new int[4][13];
+		for (int i=0; i<poker.length; i++) {
+			players[i%4][i/4] = poker[i];
+		}
+		
+		for (int[] player :players) {
+			for (int card :player) {				
+				System.out.print(card+ " ");
+			}
+			System.out.println();
+			}
+			
+		
 	}
 
 }
+
+//for (int i=1; i<5;i++) {
+//	System.out.println("玩家"+i);

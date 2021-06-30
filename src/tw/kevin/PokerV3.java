@@ -1,5 +1,7 @@
 package tw.kevin;
 
+import java.util.Arrays;
+
 public class PokerV3 {
 
 	public static void main(String[] args) {
@@ -35,10 +37,9 @@ public class PokerV3 {
 		
 		
 		
-		for (int[] player :players) {
-			System.out.println();
+		for (int[] player :players) { //攤牌
+			Arrays.sort(player);
 			for (int card :player) {
-
 			System.out.print(suits[card/13]+"-"+values[card%13]+" ");}
 			System.out.println();
 		}
@@ -47,9 +48,3 @@ public class PokerV3 {
 
 	
 		
-	
-
-
-
-//for (int i=1; i<5;i++) {
-//	System.out.println("玩家"+i);

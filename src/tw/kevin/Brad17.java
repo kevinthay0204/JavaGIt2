@@ -19,6 +19,8 @@ public class Brad17 {
 			System.out.println();
 		}
 		System.out.println("---");
+		
+		
 		for (int[] v : a) {
 			for (int vv : v) {
 				System.out.print(vv + " ");

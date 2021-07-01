@@ -37,8 +37,9 @@ public class PokerV3 {
 		
 		
 		
-		for (int[] player :players) { //攤牌
+		for (int[] player :players) { //攤牌 for each
 			Arrays.sort(player);
+			
 			for (int card :player) {
 			System.out.print(suits[card/13]+"-"+values[card%13]+" ");}
 			System.out.println();

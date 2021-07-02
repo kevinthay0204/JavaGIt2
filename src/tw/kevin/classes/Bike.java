@@ -17,10 +17,22 @@ public class Bike {
 		}
 	}
 	
-	
 	public void SlowDown() {
 		speed = speed <1 ? 0:speed*0.7;
 	}
+	
+	// Overload 覆載 SlowDown
+	public void SlowDown(int slopeX, int slopeY) {
+		if (slopeY/slopeX >0) {
+		 speed = speed*slopeY/slopeX;
+		}else {speed= speed*0.7;}
+				 
+				 
+		
+		
+	}
+	
+	
 	public double getSpeed() {
 		return speed;
 	}

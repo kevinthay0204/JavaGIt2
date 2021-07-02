@@ -22,9 +22,22 @@ public class Brad20 {
 		System.out.println(mybike.getSpeed());
 		System.out.println(yourbike.getSpeed());
 		
+		System.out.println("--------");
 		
-		
-		
-	}
+		do {
+		yourbike.SpeedUp(true);
+		}while (yourbike.getSpeed()< 80);
+		System.out.println("yourbike speed: "+yourbike.getSpeed()+ " KM");
+		System.out.println("--------");
 
-} 
+		for (int i =0;i<=10; i++) {
+			switch(i) {
+			case 1:case 3:case 5:yourbike.SlowDown();break;
+			default:yourbike.SlowDown(5,3);break;
+			}
+		}
+		System.out.println("yourbike speed: "+yourbike.getSpeed()+ " KM");
+	}
+}
+
+

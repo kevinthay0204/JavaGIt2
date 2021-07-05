@@ -17,24 +17,27 @@ public class TWId {
 //只能 10馬
 	
 
-		
-		
 	boolean ret = false;
-	if(id.length()==10) {
-		
-		String letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-		String id1 = id.toUpperCase(); 
-		char c1 = id1.charAt(0);	
-		if (letters.indexOf(c1)>=0) {
-			char c2= id.charAt(1);
-			if(c2 =='1' || c2 == '2') {
-				
-				if(id1.matches("[A-Z][12][0-9]{8}")) {  //用正規表示法就可以了
-				ret = true;
+		String letters = "ABCDEFGHJKLMNOPQRSTUVXYWZI";
+		String id1 = id.toUpperCase(); 	
+		if(id1.matches("[A-Z][12][0-9]{8}")) {  //用正規表示法就可以了
+			char c1 = id1.charAt(0);
+			int n12 =letters.indexOf(c1)+10;
+			int n1= n12/10;
+			int n2 = n12%10;
+			int n3 = Integer.parseInt(id1.substring(1,2));
+			int n4 = Integer.parseInt(id1.substring(2,3));
+			int n5 = Integer.parseInt(id1.substring(3,4));
+			int n6 = Integer.parseInt(id1.substring(4,5));
+			int n7 = Integer.parseInt(id1.substring(5,6));
+			int n8 = Integer.parseInt(id1.substring(6,7));
+			int n9 = Integer.parseInt(id1.substring(7,8));
+			int n10 = Integer.parseInt(id1.substring(8,9));
+			int n11 = Integer.parseInt(id1.substring(9,10));
+			int additup = n1+ 9*n2 + 8*n3 + 7*n4 + 6*n5 + 5*n6 +  4*n7 + 3*n8 + 2*n9 + n10 + n11;
+			if(additup%10 == 0 ) {
+				ret = true;}
 				}
-			}
-		}
-	}
 		return ret;	
 	}
 	

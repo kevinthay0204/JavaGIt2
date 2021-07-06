@@ -14,6 +14,7 @@ public class Brad34 {
 	}
 }
 abstract class Brad341{
+	Brad341(){System.out.println("Brad341()");}
 	abstract void m1();
 	abstract void m2();
 }
